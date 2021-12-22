@@ -1,0 +1,8 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ambalabanov/archlinux"
+  config.vm.box_version = "0.4.1"
+  config.vm.provider "parallels" do |prl|
+    prl.name = "Arch Linux"
+    prl.linked_clone = false
+  end
+end
